@@ -42,10 +42,21 @@
             padding: 5px;
             font-size: 18px;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 10px;
+        /* Contenedor para colocar texto e imagen lado a lado */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .flex-container ul {
+            text-align: left;
+            margin: 0;
+        }
+        .flex-container img {
+            max-width: 300px;
+            width: 100%;
             border-radius: 5px;
         }
     </style>
@@ -73,24 +84,28 @@
     
     <main>
         <h1>Paso 3: Ajustar la configuración del servidor</h1>
-        <ul>
-            <li>Haz clic en el signo de + junto al administrador de instalación.</li>
-            <li>Una vez dentro, debes ingresar los siguientes datos:</li>
-            <li><strong>Nombre de la instalación:</strong> PixelmonRanger</li>
-            <li><strong>Versión:</strong> Forge 1.16.5 - 36.2.34</li>
-            <li>En el directorio de juego, coloca un nombre único para evitar conflictos con otros servidores.</li>
-        </ul>
-        <img src="image1.png" alt="Ajustes del lanzador">
+        <div class="flex-container">
+            <ul>
+                <li>Haz clic en el signo de + junto al administrador de instalación.</li>
+                <li>Una vez dentro, debes ingresar los siguientes datos:</li>
+                <li><strong>Nombre de la instalación:</strong> PixelmonRanger</li>
+                <li><strong>Versión:</strong> Forge 1.16.5 - 36.2.34</li>
+                <li>En el directorio de juego, coloca un nombre único para evitar conflictos con otros servidores.</li>
+            </ul>
+            <img src="image1.png" alt="Ajustes del lanzador">
+        </div>
     </main>
     
     <main>
         <h1>Paso 4: Colocación de mods</h1>
-        <ul>
-            <li>Haz clic en los tres puntos de nuestro servidor y, en la tercera opción, ingresa.</li>
-            <li>Busca la carpeta llamada <strong>'mods'</strong>.</li>
-            <li>En esa carpeta coloca el mod de Pixelmon versión 1.16.5 - 9.1.13. También puedes agregar otros mods de optimización, mapas, crafteos e incluso mods para ver en la oscuridad.</li>
-        </ul>
-        <img src="image2.png" alt="Carpeta de mods">
+        <div class="flex-container">
+            <ul>
+                <li>Haz clic en los tres puntos de nuestro servidor y, en la tercera opción, ingresa.</li>
+                <li>Busca la carpeta llamada <strong>'mods'</strong>.</li>
+                <li>En esa carpeta coloca el mod de Pixelmon versión 1.16.5 - 9.1.13. También puedes agregar otros mods de optimización, mapas, crafteos e incluso mods para ver en la oscuridad.</li>
+            </ul>
+            <img src="image2.png" alt="Carpeta de mods">
+        </div>
     </main>
     
     <main>
